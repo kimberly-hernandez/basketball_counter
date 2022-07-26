@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Basketball Score Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="scoreboard">
+<table style="width: 100%">
+    <tr>
+        <th id="header">HOME</th>
+        <th id="header">GUEST</th>
+        </tr>
+        <tr>
+            <td id="box"><span id="homeScore-el"></span></td>
+            <td id="box"><span id="guestScore-el"></span></td>
+        </tr>
+        <tr>
+            <td><button onclick="addOne()" id="button">+1</button>
+            <button onclick="addTwo()" id="button">+2</button>
+            <button onclick="addThree()" id="button">+3</button></td>
+
+            <td><button onclick="addOneG()" id="button">+1</button>
+                <button onclick="addTwoG()" id="button">+2</button>
+                <button onclick="addThreeG()" id="button">+3</button></td>
+
+        </tr>
+</table>
+
+
+    </div>
+<div style="text-align:center"><br>
+    
+    <button onclick="whoWon()" id="button1">Who won?</button> <span id="winner"></span>
+    <br><br>
+    <button onclick="reset()" id="button">RESET</button>
+</div>
+
+
+    <script src = "code.js"></script>
+</body>
+</html>
